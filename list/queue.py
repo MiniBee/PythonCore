@@ -7,13 +7,13 @@ def en_it():
 
 def de_it():
     if len(queue) == 0:
-        print 'Cant not pop from an empty queue!'
+        print('Cant not pop from an empty queue!')
     else:
-        print 'Removed' + queue.pop(0)
+        print('Removed' + queue.pop(0))
 
 
 def view_it():
-    print queue
+    print(queue)
 
 
 CMDs = {'e': en_it, 'd': de_it, 'v': view_it}
@@ -35,9 +35,9 @@ def show_menu():
             except Exception:
                 choice = 'q'
             if choice not in 'edvq':
-                print 'Invalid option, try again'
+                print('Invalid option, try again')
             else:
-                print '\nYou picked %s' % choice
+                print('\nYou picked %s' % choice)
                 break
         if choice == 'q':
             break

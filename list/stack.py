@@ -7,13 +7,13 @@ def push_id():
 
 def pop_id():
     if len(stack) == 0:
-        print '\n stock is empty'
+        print('\n stock is empty')
     else:
-        print 'Removed ' + stack.pop()
+        print('Removed ' + stack.pop())
 
 
 def view_stack():
-    print stack
+    print(stack)
 
 
 CMDs = {'u': push_id, 'o': pop_id, 'v': view_stack}
@@ -35,9 +35,9 @@ def show_menu():
             except Exception:
                 choice = 'q'
             if choice not in 'uovq':
-                print 'Invalid option, try agin'
+                print('Invalid option, try agin')
             else:
-                print '\n You pickd: [%s]' % choice
+                print('\n You pickd: [%s]' % choice)
                 break
         if choice == 'q':
             break
