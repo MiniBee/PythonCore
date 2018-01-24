@@ -10,7 +10,7 @@ def main():
     'handles all the data processing'
     log = open('/home/phy/data/cardlog.txt', 'w')
     try:
-        ccfile = open('/homw/phy/data/carddata.txt', 'r')
+        ccfile = open('/home/phy/data/carddata.txt', 'r')
     except IOError as e:
         log.write('no txns this month\n')
         log.close()
